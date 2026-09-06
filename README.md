@@ -24,12 +24,14 @@ npm test
 2. Seis sequências visuais de dígitos: duas de comprimento 3, duas de 4 e duas de 5. Preparação de 1 segundo; cada dígito aparece por 1 segundo, seguido de intervalo de 250 ms. Até 15 segundos para responder. Um ponto por sequência inteira correta, de 0 a 6.
 3. Oito palavras visuais, uma apresentação de 2 segundos por palavra, com intervalo de 250 ms. Há 3 segundos de preparação.
 4. Evocação imediata livre por 60 segundos, sem encerramento antecipado.
-5. Intervalo de 300 segundos **a partir do fim da evocação imediata**, com contas de adição. A tarefa de distração não recebe nota; sua adesão não é verificada automaticamente.
+5. Intervalo de 300 segundos **a partir do fim da evocação imediata**, com contas de adição. Respostas enviadas e acertos são registrados separadamente da memória. Entradas vazias ou não inteiras não contam; a conta ainda não enviada no encerramento também não conta. Durante a etapa, aparece apenas o total respondido; acertos e erros aparecem ao final.
 6. Evocação tardia por 60 segundos. O intervalo desde o fim da apresentação das palavras é de aproximadamente 6 minutos. “Após cinco minutos” na interface se refere ao intervalo de distração.
 
 Evocações recebem de 0 a 8 pontos por correspondência de palavras inteiras, sem considerar ordem, caixa ou acentos. Duplicatas não pontuam novamente. Erros de digitação e sinônimos não são aceitos. Digitação, leitura, atenção e habilidade com o aparelho podem influenciar os resultados. Não há nota total, corte clínico, norma por idade nem alerta automatizado de piora.
 
 O app alterna oito listas próprias por sessão concluída. A primeira lista é aleatória. As listas não foram calibradas quanto à dificuldade e a alternância não elimina o efeito de prática. A periodicidade semanal é uma convenção de uso, não uma recomendação clínica validada. O protocolo mede desempenho imediato e após minutos, não retenção de dias ou semanas.
+
+Após a sessão completa, o gabarito mostra as oito palavras e quais foram lembradas ou ficaram ausentes em cada evocação, com opção de consultar o texto digitado. O histórico oferece **Ver palavras**. Sessões antigas permitem recuperar a lista, mas não a palavra ausente ou as contas, pois esses detalhes não eram registrados. Os novos campos opcionais `answers` e `math` mantêm compatibilidade com backups antigos; o protocolo de apresentação e os tempos continuam em 1.0. A exposição ao gabarito pode aumentar a familiarização com as listas em sessões futuras.
 
 Ao ocultar a página, sair do app ou detectar atraso de execução superior a 2 segundos, a sessão é cancelada e não pontua. Sessões incompletas não são salvas. Cancelar não desfaz a familiarização com os estímulos. Este controle não detecta toda distração ou uso de ajuda.
 
